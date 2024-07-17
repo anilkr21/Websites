@@ -1,0 +1,307 @@
+body{
+    overflow-x:hidden ;
+}
+.logo{
+    display: flex;
+    background-color: #4353FF;
+    height:25px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 5px;  
+}
+.logo div {
+    color: white;
+    padding-left: 5px;
+    flex-direction: row;
+    font-size:16px;
+}
+.sierra{
+    color:black;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+.main-1{
+    height: 60px;
+    padding-left: 50px;
+    padding-bottom: 0px;   
+}
+
+.sierra{
+    font-size: 1.5rem;
+}
+.search-button{
+    border:2px solid #4353FF;
+    color: gray;
+}
+.search-button:hover{
+    background-color:  #4353FF;
+    border:2px solid white;
+    transition-duration: 0.3s;
+    
+
+
+}
+/* -----------------------------------------Dropdown mega menu------------------------------------------------------- */
+.navbar-nav{
+    position: relative;
+}
+.dropdown-3{
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the button */
+    left: 50%; /* Position at the center */
+    transform: translateX(-46%); /* Center the dropdown */
+    background-color: white; /* Ensure background color matches */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: add some shadow for better visibility */
+    z-index: 1000; /* Ensure it is on top */
+    
+    /* margin-left: 90%; */
+}
+.dropdown-3.show{
+    display:flex;
+    width: 100%;
+}
+.dropdown-3 ul{
+    list-style: none;
+    padding:30px 65px 0px 65px;
+}
+.dropdown-3 ul li:first-child a{
+   color: #516beb;
+}
+.dropdown-3 ul li a{
+    color: rgb(116, 115, 115);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 5px 10px 0px 10px;
+}
+.drop button{
+    font-weight: 500;
+}
+.drop:hover .dropdown-3{
+    display: flex;
+}
+.dropdown-3 ul li a:hover{
+    color:#516beb;
+    background-color: white;
+    text-decoration: underline;
+    transition: 2em;
+ }
+ /* ------------------------------dropdown-1,2,4,5,6,7 and dropdown-1,2,7 ul{ .........}--------------------*/
+ .dropdown-1{
+    transform: translateX(-14%); /* Center the dropdown */
+    top:75px;
+    padding: 10px 0px 0px 0px;
+    
+    
+ }
+ .dropdown-1 ul{
+    list-style: none;
+    padding:20px 40px 20px 20px;
+}
+.dropdown-1 ul li a{
+    padding: 4px;
+}
+.dropdown-2{
+    transform: translateX(-17%); /* Center the dropdown */
+    top:75px;
+    padding: 10px 0px 0px 0px;
+}
+.dropdown-2 ul{
+    list-style: none;
+    padding:20px 80px 40px 20px;
+}
+.dropdown-2 ul li a{
+    padding: 5px;
+}
+.dropdown-4{
+    transform: translateX(-52%); /* Center the dropdown */
+
+}
+.dropdown-5{
+    transform: translateX(-58%); /* Center the dropdown */
+    padding: 5px 20px 20px 20px;
+}
+.dropdown-6{
+    transform: translateX(-64%); /* Center the dropdown */
+    padding: 5px 20px 20px 20px;
+}
+.dropdown-7{
+    transform: translateX(-19%);
+    top:75px;
+  
+}
+.dropdown-7 ul{
+    list-style: none;
+    padding:20px 40px 20px 20px;
+}
+.dropdown-7 ul li a{
+    padding: 5px;
+}
+/* ---------------------------------------1st Container------------------------- */
+.mainrow-1{
+    position:relative;
+    height: 400px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.mainrow-1 h1{
+    position: absolute;
+    display:inline-block;
+    font-size:3.5rem;
+    text-align: center;
+    font-weight: 600;
+   
+}
+.saas-startup{
+    text-decoration: underline 12px  blue ;
+    font-family: "Lora", 'Times New Roman',cursive;
+    font-weight: 500;
+    font-style: italic;
+}
+.mainrow-1 p{
+    position: absolute;
+    margin-top: 230px;
+    text-align: center;
+    font-size: 1.1rem;
+    color:gray;  
+}
+/* ----------------------------------------Mainrow-2 and its subrow-1------------------- */
+.mainrow-2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 1300px;
+   }
+.mainrow2-sub-1{
+    position: absolute;
+    height: 560px;
+    object-fit: cover;
+    display: inline-block;
+    justify-content: center;
+    border-radius: 10px;
+    top: 0px;
+}
+.vedio{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    z-index: 999;
+    border-radius: 20px;
+}
+@media (min-aspect-ratio:16/9) {
+
+    .vedio{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9) {
+
+    .vedio{
+        width: auto;
+        height: 100%;
+    }
+}
+/* --------------------------------------Mainrow-2 and subrow-2----------------------- */
+.mainrow2-sub-2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top:300px;
+    height: 600px;
+    width: 1200px;
+    background-color: #000970;
+    border-radius: 20px;
+}
+.mainrow2-sub-2 div{
+    position: absolute;
+    top: 380px;
+    text-align: center;
+}
+.mainrow2-sub-2 p{
+    color: #fff;
+    font-size: 0.8rem;
+}
+.mainrow2-sub-2 button{
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #4353FF ;
+    padding:10px 20px;
+    border-radius: 30px;
+    border:none;
+    margin:30px;                                                                                                  
+}
+.mainrow2-sub-2 button:hover{
+    background-color: #fff;
+    color: #4353FF;
+    transition-duration: 0.4s;
+}
+/* --------------------------------------Mainrow-2 and subrow-3----------------------- */
+.mainrow2-sub-3{
+    position: absolute;
+    display: inline-block;
+    top: 1000px ;
+    text-align: center;
+}
+.mainrow2-sub-3 button{
+    padding: 2px 10px;
+    color:  #4353FF;
+    background-color: #fff;
+    border: 1px solid  lightgrey;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    margin: 10px;
+}
+.mainrow2-sub-3 h1{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+}
+.mainrow2-sub-3 h1 span{
+    font-family:"Lora", 'Times New Roman',cursive ;
+    font-style: italic;
+    text-decoration: underline 12px blue;
+}
+.mainrow2-sub-3 p{
+    text-align: center;
+    font-size: 1.1rem;
+    color:gray;  
+}
+/* ----------------------------------------- container-2 Mainrow-3 and its subrows ---------------------------- */
+
+.mainrow-3{
+    position: relative;
+    height: 1500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px,1fr));
+    grid: 10px;
+    justify-content: end;
+}
+.mainrow-3 .mainrow3-subrow{
+    height: 300px;
+    width:380px;
+    border-radius: 10px;
+    margin-left: 11px;
+    transition:transform 0.3s ease;
+}
+.mainrow-3 div img{
+    height: 300px;
+    width: 380px;
+    border-radius: 10px;
+}
+.mainrow-3 div p{
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin-top: 15px;
+}
+.mainrow-3 .mainrow3-subrow:hover{
+    
+    transform: translateY(-5px);
+}
