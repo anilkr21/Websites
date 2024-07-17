@@ -305,3 +305,12 @@ body{
     
     transform: translateY(-5px);
 }
+/* --------------------------------------Mainrow-4 and its subrows---------------------------- */
+.mainrow-4 {
+    position: relative;
+    display: flex;
+}
+.mainrow-4 button{
+    color:#4353FF ;
+    padding:0px 10px;
+}
